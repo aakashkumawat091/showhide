@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evnets</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        div#show {
+            background-color: #000;
+            padding: 30px 15px;
+            text-align: center;
+        }
+
+        div#show h1 {
+            color: #fff;
+            cursor: pointer;
+        }
+
+        div#para {
+            background-color: red;
+            color: #fff;
+            padding: 50px 15px;
+            font-size: 20px;
+            text-align: center;
+            line-height: 35px;
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- <button onclick="hello()">Click-Me</button> -->
+
+
+    <div id="show" onclick="showtext()" ondblclick="hidetext()">
+        <h1>Click to show panel</h1>
+    </div>
+
+    <div id="para">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iste aperiam ex esse amet, nostrum dolores ab cum
+        vitae provident unde, mollitia, praesentium corporis officia corrupti maiores rem veritatis! Doloribus deleniti
+        velit explicabo odio a cumque ipsam veniam. Pariatur natus commodi nisi tempore vel perspiciatis voluptatem
+        quisquam culpa libero in quas dolores animi accusantium, sequi odio iusto nemo minima! Quae voluptas dolorem
+        possimus distinctio assumenda optio voluptatibus. Assumenda vel quisquam eveniet tempore iure dolor nemo saepe?
+        Sequi libero minima saepe consequatur?
+    </div>
+
+
+    <script>
+        function showtext() {
+            let target = document.getElementById("para");
+            target.style = "display:block";
+        }
+
+        function hidetext() {
+            let target = document.getElementById("para");
+            target.style = "display:hide";
+        }
+
+
+
+        // function hello(){
+        //     alert("Welcome TO The World Of JS !!!")
+        // }
+
+
+
+
+    </script>
+
+</body>
+
+</html>
